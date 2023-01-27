@@ -228,6 +228,8 @@ footer {
   margin-right: 6%;
   margin-top: 5rem;
   display: grid;
+  grid-template-columns: repeat(_auto-fit, minmax(250px, 1fr)_);
+  gap: 1em;
   
   
 
@@ -235,7 +237,7 @@ footer {
   "heading heading address contact"
   "digital-natives-column digital-natives-column-2 kantoor-column contact-column"
   ;
- grid-template-columns: 2fr 4fr 3fr 3fr;
+ /* grid-template-columns: 2fr 4fr 3fr 3fr; */
 }
 
 .footer-place-holder {
@@ -305,19 +307,19 @@ ul {
     margin-right: 0px;
   }
 
-  .section-1 {
+  .section-1 ,.contact-informations-place-holder{
 
     margin-left: 4vmax;
     margin-right: 4vmax;
   }
 
-  #text-1, .text-2   {
+  #text-1, .text-2 ,.contact-informations-place-holder > p  {
     font-weight: 400;
     font: 300;
     font-size: 20px;
   }
   
-  #text-2 {
+  #text-2,.contact-informations-place-holder > p  {
   font-weight: 200;
   font-size: 30px;  
 
